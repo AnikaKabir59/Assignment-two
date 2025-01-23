@@ -352,10 +352,16 @@ left: 1px;
 @media screen and (min-with:850px){
    
 }
-@media screen and (max-with:850px){
+@media screen and (max-with:450px){
+   section{
+    flex-direction: column-reverse;
+   }
     *{
         flex-direction: column;
+    flex-wrap: wrap;
+    }
+    footer{
+        flex-direction: column-reverse;
     }
         
     }
-}
