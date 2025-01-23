@@ -20,7 +20,7 @@ height: 62px;
 /* Auto layout */
 display: flex;
 flex-direction: row;
-justify-content: space-around;
+justify-content: space-between;
 align-items: center;
 gap: 186;
 padding: 10px;
@@ -100,6 +100,7 @@ color:var(--first-color);
                 border: none;
                 padding:5px;
             }
+            
 
 /*nav end*/
 
@@ -153,6 +154,7 @@ height: auto;
 }
 /*banner end*/
 
+}
 /* card start*/
 #card-box{
     width:884px;
@@ -193,7 +195,8 @@ width:100%;
     width:100%;
 }
 .card-container .color1{
-    background-color: rgba(253, 251, 165, 0.208);
+    background-color: rgba(230, 228, 119, 0.208);
+    background-image: -o-linear-gradient(rgba(248, 223, 79, 0.741));
     background-color: ;
     padding:5px;
     border-radius: 10px;
@@ -233,7 +236,13 @@ h1{
 
 }
 /* card end*/
-
+.gallary .arrow{
+    color:#FEA301;
+    
+}
+.gallary .arrow:hover{
+    color: aqua;
+}
 /* gallary start*/
 .gallary{
     margin: 0 auto;
@@ -247,6 +256,7 @@ h1{
 .item1, .collage{
     width: 50%;
     background-image: url(B11-A2-Kids-School-main/assets/bg.png);
+   
     padding: 5px;
     
 }
@@ -256,10 +266,25 @@ h1{
     justify-content: space-between;
     align-items: center;
 }
+ .item1 button{
+
+    background-color:var(--third-color);
+    border:none;
+    height:40px;
+    width: 100px;
+    border-radius: 10px;
+}
 .collage{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap:5px;
+}
+.collage button{
+    background-color:var(--first-color);
+    border:none;
+    height:30px;
+    width: 100px;
+    border-radius: 5px; 
 }
 .work{
     display: flex;
@@ -310,6 +335,7 @@ left: 1px;
     justify-content: center;
     align-items: center;
     list-style-type: none;
+    gap:5px;
 }
 .content2 a{
     text-decoration: none;
@@ -319,8 +345,17 @@ left: 1px;
     list-style-type: none;
     color: #FFFFFF;
 }
+
+
 /*footer end*/
 /*media*/
-@media screen and (max-with:450px){
+@media screen and (min-with:850px){
    
+}
+@media screen and (max-with:850px){
+    *{
+        flex-direction: column;
+    }
+        
+    }
 }
