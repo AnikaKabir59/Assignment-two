@@ -75,6 +75,10 @@ letter-spacing: 0%;
 text-align: left;
 
 }
+.child:hover{
+    background-color: bisque;
+
+}
 .child1{
 color:var(--first-color);
 }
@@ -86,6 +90,15 @@ color:var(--first-color);
         }
 .child4{
             color:var(--fourth-color);
+            }
+            .btn1{
+                width: 100px;
+                height: 35px;
+                border-radius: 5px;
+                background: rgb(254, 163, 1);
+                color: #FFFFFF;
+                border: none;
+                padding:5px;
             }
 
 /*nav end*/
@@ -128,6 +141,16 @@ height: auto;
 .text-secondary{
     color:#01ACFD;
 }
+.btn2{
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    background: rgb(17,17,17);
+    color: #FFFFFF;
+    font-weight: 400;
+    border: none;
+    padding:5px;
+}
 /*banner end*/
 
 /* card start*/
@@ -139,7 +162,11 @@ height: auto;
 #card-box .title{
 
 }
+.back{
+    background-image: url(B11-A2-Kids-School-main/assets/bg.png);
+}
 .card-container{
+    
     margin-top: 15px;
 display:flex;
 justify-content: space-around;
@@ -166,23 +193,44 @@ width:100%;
     width:100%;
 }
 .card-container .color1{
-    background-color: rgb(227, 244, 239);
+    background-color: rgba(253, 251, 165, 0.208);
     background-color: ;
     padding:5px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .card-container .color2{
-    background-color: rgb(76, 118, 97);
+    background-color: rgb(238, 233, 237);
     padding:5px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .card-container .color3{
-    background-color:rgb(247, 235, 207) ;
+    background-color:rgb(244, 237, 221) ;
     padding:5px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 h1{
     text-align: center;
+}
+.btn4{
+    background-color: none;
+    color: var(--second-color);
+    text-decoration: none;
+    border: none;
+
+}
+.btn5{
+    background-color: none;
+    color: var(--first-color);
+    text-decoration: none;
+    border: none;
+
+}
+.btn6{
+    background-color: none;
+    color:rgb(135, 0, 255);
+    text-decoration: none;
+    border: none;
+
 }
 /* card end*/
 
@@ -192,10 +240,15 @@ h1{
     padding: 20px;
     text-align: center;
 }
+.item1{
+    
+    background-image: url(B11-A2-Kids-School-main/assets/bg.png);
+}
 .item1, .collage{
     width: 50%;
-    background-color: aqua;
+    background-image: url(B11-A2-Kids-School-main/assets/bg.png);
     padding: 5px;
+    
 }
 
 .pic-container{
@@ -207,6 +260,24 @@ h1{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap:5px;
+}
+.work{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.btn3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    background: rgb(17,17,17);
+    color: #FFFFFF;
+    font-weight: 400;
+    border: none;
+    padding:5px;
 }
 /* gallary end*/
 
@@ -227,7 +298,9 @@ position: absolute;
 width: 100%;
 height: 450px;
 left: 1px;
-
+.logo2{
+    display: inline;
+}
 }
 .content span{
     font-weight: 600px;
@@ -238,8 +311,16 @@ left: 1px;
     align-items: center;
     list-style-type: none;
 }
+.content2 a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
 .content2{
     list-style-type: none;
     color: #FFFFFF;
 }
 /*footer end*/
+/*media*/
+@media screen and (max-with:450px){
+   
+}
